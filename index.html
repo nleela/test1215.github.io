@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Text-Only Page</title>
+    <title>Elegant Static Web Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             color: #333;
         }
+
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #343a40;
+            color: white;
+            padding: 1rem 2rem;
             text-align: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         nav {
-            background-color: #444;
-            color: #fff;
-            padding: 0.5rem;
+            margin: 1rem 0;
             text-align: center;
         }
+
         nav a {
-            color: #fff;
-            margin: 0 1rem;
+            text-decoration: none;
+            margin: 0 15px;
+            color: #007bff;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f1f1f1;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007bff;
             text-decoration: none;
         }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Welcome to My Text-Only Page</h1>
+        Welcome to the Elegant Web Page
     </header>
+
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <main>
-        <h2>About This Page</h2>
-        <p>This is a simple example of a web page that uses only text and CSS for styling. No images are used, making it lightweight and fast to load.</p>
-        <h2>Benefits of Text-Only Pages</h2>
-        <ul>
-            <li>Faster load times</li>
-            <li>Better readability</li>
-            <li>Focus on content</li>
-        </ul>
-    </main>
+
+    <section id="about">
+        <h1>About This Page</h1>
+        <p>
+            This static web page is designed to demonstrate the potential of simplicity and elegance in web design.
+            Using modern CSS and semantic HTML, it creates a visually appealing and functional layout.
+        </p>
+    </section>
+
+    <section id="features">
+        <h1>Features</h1>
+        <p>
+            <strong>Responsive Design:</strong> Adjusts seamlessly to any screen size.
+        </p>
+        <p>
+            <strong>Neat Typography:</strong> Elegant fonts ensure great readability.
+        </p>
+        <p>
+            <strong>Light and Minimal:</strong> Clean layout keeps the focus on the content.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>
+            Have feedback or questions? Feel free to reach out.
+        </p>
+        <p>Email: <a href="mailto:example@domain.com">example@domain.com</a></p>
+    </section>
+
     <footer>
-        <p>© 2024 My Text-Only Page</p>
+        &copy; 2024 Elegant Web Designs | Built with <a href="https://developer.mozilla.org/en-US/" target="_blank">HTML & CSS</a>
     </footer>
 </body>
+
 </html>
